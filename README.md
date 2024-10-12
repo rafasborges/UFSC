@@ -1,4 +1,4 @@
-# UFSCUFSC
+# UFSC
 
 INE5605 - Desenvolvimento de Sistemas Orientados a Objetos I
 
