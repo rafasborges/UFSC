@@ -1,0 +1,189 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0px;
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#home{
+  font-size: x-large;
+  font-style: oblique;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ce7095;
+  padding: 1rem;
+}
+.navbar>ul>li {
+  float: left;
+  list-style-type: none;
+}
+.div_principal{
+  display: flex;
+  justify-content: space-between;
+}
+.div_principal>div{
+  margin: 30px;
+}
+.div_principal>.home>h4{
+  margin-left: 10px;
+}
+#sobre_mim{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  font-size: larger;
+}
+
+.texto_sobremim p{
+  text-align: justify;
+  text-indent: 25px;
+
+}
+.texto_interesses p{
+  text-align: justify;
+  text-indent: 25px;
+}
+aside{
+  width: 24%;
+  background-color: #ce7095;
+  margin: 2%;
+  padding: 3%;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.eu{
+  display: flex;
+  justify-content: center;
+}
+#disciplinas_cursadas{
+  margin-left: 40px;
+  font-size: larger;
+}
+
+#interesses{
+  margin-left: 10px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside>div{
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+}
+.botao{
+    display: block;
+    background: #FFF;
+    color: #ce7095;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.botao_dif{
+    display: inline-block;
+    background: #FFF;
+    color: #ce7095;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin-left: 2%;
+}
+.botao_end{
+  display: inline-block;
+  color: white;
+  margin-bottom: 5px;
+}
+.botao_end a:not(:last-child)::after{
+  content: " /"; 
+  margin-left: 5px;
+}
+aside>div>div>img{
+  display: flex;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.div_materias {
+  display: flex;
+  margin: 5px;
+  justify-content: space-around;
+  gap: 16px;
+  padding: 10px;
+}
+
+.div_materias > div {
+  background-color: #ce7095;
+  width: 30%; /* Ajustei a largura para 30% */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: justify;
+  color: white;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+#links{
+  margin-left: 40px;
+  font-size: larger;
+}
+footer{
+  display: flex;
+  background-color: #ce7095;
+  margin: 0;
+  padding: 1rem;
+  justify-content: center;
+  color: white;
+}
+
+@media(max-width:415px) {
+  .div_materias {
+		flex-wrap: wrap;
+
+	}
+  .div_principal{
+    flex-wrap: wrap;
+  }
+  .div_principal>div{
+    order: 1;
+  }
+  .div_principal>aside{
+    width: 100%;
+  }
+	.div_materias{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  .div_materias>div{
+    width: 100%;
+  
+  }
+
+	}
+

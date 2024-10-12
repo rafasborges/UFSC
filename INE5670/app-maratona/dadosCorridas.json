@@ -1,0 +1,137 @@
+[
+    {
+      "id": 1,
+      "image": "https://cdn.ticketagora.com.br/ticketagora/images/P6KLMKBNI3JWDDZ5PQJKQRD0HR7F63RMQNL0W4GQEFCLPAGRUQ.png",
+      "name": "Meia Maratona Engeplanti Ilha da Magia - Comemorativa 351 Anos de Florianópolis",
+      "data": "domingo, 31 de março de 2024 às 17:00h",
+      "cidade": "Florianópolis",
+      "website": "https://site.ticketsports.com.br/Inscricao/categoria.aspx?__idEvento=37901",
+      "mapa": "https://maps.app.goo.gl/gSYj3qTFbyofFQX26",
+      "video":"https://www.youtube.com/watch?v=mh-yGSRVrgM",
+      "address": {
+        "street": "Av. Beira Mar Norte",
+        "city": "Florianópolis",
+        "zipcode": "88010-400"
+        
+        }
+      },
+
+    {
+      "id": 2,
+      "image": "https://mountaindo.com.br/wp-content/webp-express/webp-images/uploads/2022/07/rosa-banner.jpeg.webp",
+      "name": "Mountain Do Praia do Rosa 2024",
+      "data": "sábado, 6 de abril de 2024 às 08:00h",
+      "cidade": "Imbituba",
+      "website": " https://mountaindo.com.br/trail-run/mountaindopraiadorosa/",
+      "mapa": "https://maps.app.goo.gl/Hw82PpY6AgoNPYZVA",
+      "video":"https://www.youtube.com/watch?v=SDxZec0fpCA",
+      "address": {
+        "street": "Ibiraquera",
+        "city": "Imbituba",
+        "zipcode": "88780-000",
+        "geo": {
+         "lat": "-71.4197",
+          "lng": "71.7478"
+          }
+        }
+      },
+    
+    {
+      "id": 3,
+      "image": "https://ik.imagekit.io/apuama/events/58260/image-1709812718345",
+      "name": "Madrugadão - Ultra Trail Experience Evento",
+      "data": "sábado, 13 de abril de 2024 às 08:30h",
+      "cidade": "Concórdia",
+      "website": "https://apuama.com/pt/events/madrugadao-ultra-trail-experience-58260",
+      "mapa": "https://maps.app.goo.gl/LS5vpnLz66ARf1F46",
+      "video":"https://www.youtube.com/watch?v=_vxA779IhVs",
+      "address": {
+        "street": " Rua Victor Sopelsa",
+        "city": "Concórdia",
+        "zipcode": "89700-000",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      }
+    },
+    
+    {
+      "id": 4,
+      "image": "https://static.wixstatic.com/media/bc1e8d_f9366a49124a43dcb015a81df4373682~mv2.png/v1/fill/w_473,h_466,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bc1e8d_f9366a49124a43dcb015a81df4373682~mv2.png",
+      "name": "Jaraguá SkyMarathon",
+      "data": "quinta-feira, 18 de abril de 2024 às 10:00h",
+      "cidade": "Jaraguá do Sul",
+      "website": "https://www.uteventos.com.br/",
+      "mapa": "https://maps.app.goo.gl/usSm8wLreszEYywm7",
+      "video":"https://youtu.be/2m1s9l7Oc8I?si=wM3u_O-MZJm0Nh6-",
+      "address": {
+        "street": "R. Antônio Cunha, 160",
+        "city": "Jaraguá do Sul",
+        "zipcode": " 89256-140",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      }
+    },
+  
+    {
+      "id": 5,
+      "image": "https://ik.imagekit.io/apuama/events/54633/image-1708943606591",
+      "name": " Meia Maratona Palhoça",
+      "data": "domingo, 21 de abril de 2024 às 07:00h",
+      "cidade": "Palhoça",
+      "website": "https://apuama.com/pt/events/meia-maratona-de-palhoca-2024-54633",
+      "mapa": "https://maps.app.goo.gl/naqpjoRJUX8Tm6C5A",
+      "video":"https://youtu.be/tGmHK00SnEg?si=oiMETY-oE34lcPDT",
+      "address": {
+        "street": " R. das Figueiras - Cidade Universitária Pedra Branca",
+        "city": "Palhoça",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "image": "https://cdn.ticketagora.com.br/ticketagora/images/DBN27IW90TJGQUJUKN7ODYNE8XID5UMQJBCKJHWI9WE2227K38.png",
+      "name": "Meia Maratona Nacional De Florianópolis OAKBERRY 2024",
+      "data": "domingo, 5 de maio de 2024 às 07:00h",
+      "cidade": "Florianópolis",
+      "website": "https://site.ticketsports.com.br/Inscricao/categoria.aspx?__idEvento=37666",
+      "mapa": "https://maps.app.goo.gl/naqpjoRJUX8Tm6C5A",
+      "video":"https://youtu.be/H2ZpMyPDIcU?si=3Hdu3SLD0o6a2fd9",
+      "address": {
+        "street": "Av. Beira Mar Norte ",
+        "city": "Florianópoli",
+        "zipcode": "88010-400",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      }
+    },
+  
+    {
+      "id": 7,
+      "image": "https://ik.imagekit.io/apuama/events/51301/image-1708639880239",
+      "name": " Live! Run XP",
+      "data": "domingo, 7 de julho de 2024 às 07:30h",
+      "cidade": "Florianópolis ",
+      "website": "https://apuama.com/pt/events/live-run-xp-florianopolis-2024-51301",
+      "mapa": "https://maps.app.goo.gl/naqpjoRJUX8Tm6C5A",
+      "video":"https://www.youtube.com/watch?v=iQ5uvxxivzM",
+      "address": {
+        "street": "Av. Cláudio A. Barbosa, 24",
+        "city": "Florianópolis ",
+        "zipcode": "88075-220",
+        "geo": {
+          "lat": "24.8918",
+          "lng": "21.8984"
+        }
+      }
+    }
+]
