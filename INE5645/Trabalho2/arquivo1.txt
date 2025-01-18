@@ -1,0 +1,20 @@
+A rede de computadores
+
+Uma rede de computadores caracteriza-se por dois ou mais computadores interligados, não importando por qual meio (cabos, ondas de rádio etc), desde que sejam capazes de trocar informações entre si e/ou compartilhar seus recursos de hardware.
+
+Em uma rede de computadores também podemos ter clientes e servidores. Servidor é uma máquina que fornece um serviço qualquer na rede e Cliente é uma máquina que consome o serviço fornecido pelo Servidor. Também dizemos que algumas aplicações são clientes e outras servidoras, quando fornecem ou consomem serviços na rede. Por exemplo, o Mozilla Thunderbird é um cliente de e-mail, já o Postfix é um servidor de e-mail. Um navegador de internet (Chrome, Firefox etc) é uma aplicação cliente que requisita dados de um servidor.
+
+Uma rede funciona sob protocolos (que são regras que definem o funcionamento dela) e a família de protocolos mais conhecida e utilizada é a TCP/IP, que engloba os protocolos IP (da camada de rede), TCP e UDP (da camada de transporte), HTTP (da camada de aplicação) entre outros.
+
+A referência de como as redes funcionam e são construídas vem do modelo OSI, que foi definido pela ISO em meados dos anos 80 para servir de referência para o projeto de hardware e software das redes, pois o que acontecia é que cada fornecedor implementava o seu próprio padrão e isso prejudicava a interoperabilidade. Apesar do modelo OSI ainda ser a referência teórica (o modelo) para as redes, a arquitetura TCP/IP é que tem a aplicabilidade e o protagonismo nas intranets e na internet.
+
+O modelo OSI possui sete camadas enquanto o TCP/IP é dividido em cinco. O diagrama abaixo mostra onde as camadas do modelo TCP/IP se “encaixam” no OSI:
+
+Diagrama TCP/IP - OSI
+
+O protocolo IP (Internet Protocol) é o mais importante da família TCP/IP (ele se localiza na camada de rede) e ele deve ser associado com outros protocolos e, no contexto desse artigo, os mais importantes e mais utilizados são o TCP e o UDP.
+TCP vs UDP
+
+Ambos são protocolos da camada de transporte e, quando precisamos de confiabilidade no transporte do dado, usamos o protocolo IP associado ao TCP (que garante a entrega das informações). Quando priorizamos mais velocidade e menos controle, associamos o protocolo IP ao UDP (tráfego de voz e vídeo são bons exemplos onde o UDP teria boa aplicabilidade, ademais, perdendo um ou outro pacote, não interfere totalmente no todo, permanecendo inteligível).
+
+Observe que a comunicação no TCP se dá nas duas pontas:

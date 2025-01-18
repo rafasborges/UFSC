@@ -1,0 +1,41 @@
+Por essas características menos restritivas (menos controles) ele é muito mais rápido que o TCP. Como contrapartida, ele exige um pouco mais do desenvolvedor na hora de implementá-lo.
+
+Por fim, é importante pontuar que tanto o UDP quanto o TCP trabalham com portas, que são elementos lógicos que interligam clientes e servidores de aplicações em redes TCP/IP. O cliente precisa saber qual porta ele se conectará no servidor. Por exemplo, servidores web por padrão usam a porta 80 para servir as páginas e quando acessamos uma página web usando o protocolo http (que é um protocolo de aplicação da TCP/IP) uma conexão TCP à porta 80 do servidor é feita.
+O que é um Socket?
+
+Socket provê a comunicação entre duas pontas (fonte e destino) - também conhecido como two-way communication - entre dois processos que estejam na mesma máquina (Unix Socket) ou na rede (TCP/IP Sockets). Na rede, a representação de um socket se dá por ip:porta, por exemplo: 127.0.0.1:4477 (IPv4). Um socket que usa rede é um Socket TCP/IP.
+
+Muito do que fazemos no dia a dia faz uso de sockets. O nosso navegador utiliza sockets para requisitar as páginas; quando acessamos o nosso servidor pelo protocolo de aplicação SSH também estamos abrindo e utilizando um socket.
+
+Sabendo que TCP/IP é base da nossa comunicação na internet, considerando o modelo de rede OSI, os sockets estão entre a camada de aplicação e a de transporte:
+
+Diagrama comunicação socket
+Rede de Computadores - Routing e Switching
+Curso Rede de Computadores - Routing e Switching
+Conhecer o curso
+
+Para os processos envolvidos a sensação é que a comunicação está acontecendo diretamente entre eles, no entanto, ela está passando pelas camadas da rede. Essa abstração provida pelos Sockets é o que chamamos de comunicação lógica. Outra forma de entender os Sockets é que eles são a “interface” de comunicação interprocessos.
+
+Todo cliente deve conhecer o socket do servidor (conjunto ip e porta) para se comunicar, mas o servidor só vai conhecer o socket do cliente quando este realizar uma conexão com ele, ou seja, a conexão no modelo cliente-servidor é sempre iniciada pelo cliente.
+
+O diagrama abaixo mostra que a porta do servidor precisa ser previamente conhecida pelo cliente, enquanto que pro servidor não importa qual é a porta do cliente, ele vai conhecê-la quando a conexão dele com o cliente for estabelecida.
+
+Diagrama socket
+
+Sistemas operacionais baseados no Unix proveem uma interface padrão para operações I/O (input e output) que se passa por descritores de arquivo. Um descritor de arquivo é representado por um número inteiro que se associa a um arquivo aberto e, nesses sistemas, há uma generalização de que “tudo é um arquivo”, então, nesse contexto, um arquivo pode ser uma conexão de rede (um socket é um tipo especial de arquivo), um arquivo de texto, um arquivo de áudio, até mesmo uma pasta é um tipo especial de arquivo.
+
+Como um socket se comporta como um arquivo, chamadas de sistema de leitura e escrita são aplicáveis, da mesma forma como funcionam em um arquivo ordinário, e é aqui que entra a programação de sockets com a API POSIX sockets. Linguagens como o Java, PHP etc, abstraem isso fornecendo ao desenvolvedor uma API de ainda mais alto nível.
+
+Python - Orientação a objetos
+Curso Python - Orientação a objetos
+Conhecer o curso
+
+Unix Socket
+
+Em sistemas Unix e agora recentemente também no Windows 10, temos um mecanismo para a comunicação entre processos que estão no mesmo host (ao invés da rede), chamado de Unix Socket. A diferença entre um Unix Socket (IPC Socket) de um TCP/IP Socket é que o primeiro permite a comunicação entre processos que estão na mesma máquina. Já o segundo, além disso, permite a comunicação entre processos através da rede.
+
+No entanto, um TCP/IP Socket também pode ser usado para a comunicação de processos que estão na mesma máquina através do loopback que é uma interface virtual de rede que permite que um cliente e um servidor no mesmo host se comuniquem (em IPv4 através do IP 127.0.0.0).
+
+A particularidade é que Unix Sockets estão sujeitos às permissões do sistema e costumam ser um pouco mais performáticos, pois não precisam realizar algumas checagens e operações, por exemplo, de roteamento, algo que acontece com os TCP/IP Sockets. Ou seja, se os processos estão na mesma máquina, Unix Sockets podem ser a melhor opção, mas se estiverem distribuídos na rede, os TCP/IP Sockets são a escolha certa.
+
+Se você tem acesso a algum servidor baseado em Unix, execute netstat -a -p --unix que ele listará todos os Unix Sockets abertos no sistema operacional (bem como mostrará outras informações como o tipo do Socket, caminho etc). Se você quiser visualizar tanto os TCP/IP Sockets quanto os Unix Sockets, você pode executar netstat -na, ele exibirá duas tabelas listando todos os sockets abertos:
