@@ -9,3 +9,5 @@ INE5613 - Banco de Dados I
 INE5646 - Programação para Web
 
 INE5670 - Desenvolvimento de Sistemas Móveis e Embarcados
+
+INE5645 - Programação Paralela e Distribuída
